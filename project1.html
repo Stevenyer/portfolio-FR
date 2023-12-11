@@ -71,23 +71,23 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Domain</strong>: embedded System, database, WEB, docker</li>
-                <li><strong>Project date</strong>: 01 March, 2023</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/Nexaco15/project.git">Github</a></li>
+                <li><strong>Domain</strong>: electronique, C language</li>
+                <li><strong>Project date</strong>: 2022</li>
+                <li><strong>Project URL</strong>: <a href="">Github</a></li>
               </ul>
             </div>
           </div>
             <div class="portfolio-description">
               <h2><i class="bx bx-down-arrow"></i>  Description  <i class="bx bx-down-arrow"></i></h2>
               <p>
-                For this project, We had to make a game with two dice. We were separated by group, I was with Jérôme Sartiaux, Loïc Tuplink, Antoine Sprumont, Bastien Igot, Léandre Karasavas.
+                For this project,I was in team with Jérôme Sartiaux, Loïc Tuplink, Antoine Sprumont, Bastien Igot, Léandre Karasavas. We had to make a game with two dice.
 
-                The principle of the game was simple, we started with some points every then the player lunch the two dice, one player by one, the result of the two dice was sum.
-                After we subtract the point by the result down to 0 the first player at 0 wins.
-                But we put one obstacle if we go down 0, we don't subtract and stay like before we lunch.
+                The principle of the game was simple, we started with some points for everyone. Then the player lunch "two dice", one player by one. The result of the two dice was sum.
+                After it subtracts the point by the result down to 0, the first player at 0 wins.
+                But we put one obstacle if we go down 0, it didn't subtract and stay like before the player lunched.
                 <p>
-                 The project was separet in two part : an electronique part and an It part, This two part were Connected by a communication card.</br></br>
-                 The electronique part had 14 leds, numbered from 1 to 7 by each part, each one represent the point of the dice like you see in the scematics, here is the logical for each led on :
+                 The project was separate in two parts : an electronique part and an It part. This two part were connected by a communication card.</br></br>
+                 The electronique part had 14 leds, numbered from 1 to 7 by each part. Each one represent the point of the dice like you see in the scematics. Here is the logical for each led on :
                  	<ul>
                  <li>1 : D7</li> 
                  <li>2 : D5  D6</li> 
@@ -124,27 +124,43 @@
                  </div>
                  </div>
                 </p>
+                
 
                 <p>
                   <h5>CD4029</h5></br>
                  <div class="left-side-img">
                  <div class="text">
                  <p>
-                 The CD4029 
+                 The CD4029 is an up/down counter. it can count in binary or decimal, and relunch the count when it can't go higher.
                  </p></div>
                  <div class="image">
                   <img src="assets/img/portfolio/1st year/4029.jpg" alt="" width="260px" height="320px">
                  </div>
                  </div>
                 </p>
+                
+                
+                <p>
+                  <h5>CD4053</h5></br>
+                 <div class="left-side-img">
+                 <div class="text">
+                 <p>
+                 The CD4053 is an analogue multiplexer/demultiplexer triple. Each part had 2 canals and 3 entry command 
+                 </p></div>
+                 <div class="image">
+                  <img src="assets/img/portfolio/1st year/4053.png" alt="" width="320px" height="260px">
+                 </div>
+                 </div>
+                </p>
+              </br>
 
                  Here was the logic of the programs : </br>
                  <div class="left-side-img">
                  <div class="text">
                  <p>
                  When it was lunch, a loop makes a check to see if 
-                 the points different to 0 if not, the listen to the communication card and take the 2 dice and does the sum after substract the points by the sum.
-                 it does an other verification, if the sum are bigger or equals to 0 if it was , the points are authorized if not the point stayed the same.
+                 the points different to 0 if not. It listened to  the communication card and took the two dice and did the sum after substract the points by the sum.
+                 It did an other verification, if the sum was bigger or equals to 0  , the points are authorized. If not the point stayed the same.
                  </p></div>
                  <div class="image">
                   <img src="assets/img/portfolio/1st year/programs logic.png" alt="">
