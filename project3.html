@@ -55,21 +55,25 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/3rd year/gantelet.png" alt="">
+                  <img src="assets/img/portfolio/3rd year/arm_assembly.jpg" alt="" class="responsive-img">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/3rd year/home app.png" alt="" height="800px" width="200px">
+                  <img src="assets/img/portfolio/3rd year/glove.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/3rd year/controller.png" alt="" height="800px" width="200px">
+                  <img src="assets/img/portfolio/3rd year/home app.png" alt="" class="responsive-img">
                 </div>
 
                 <div class="swiper-slide">
-                    <h1>In Progress</h1>
-                  <img src="assets/img/portfolio/" alt="">
+                  <img src="assets/img/portfolio/3rd year/controller.png" alt="" class="responsive-img">
                 </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/3rd year/logs.jpg" alt="" class="responsive-img">
+                </div>
+
 
                 </div>
               
@@ -91,13 +95,34 @@
               <h2><i class="bx bx-down-arrow"></i>  Description  <i class="bx bx-down-arrow"></i></h2>
               <p>
                 I intend to build a glove with a gyro sensor to control the movement of the motors to turn or move.
-forwards and backward, and a pressure sensor to close the robot's gripper with our fingers.
-For example, it can manipulate toxic objects, melting objects, etc. with this sort of system, but not
-automatically.
-That is a sort of help; imagine putting that on a buggy to move a damaged uranium container or bomb.
-can be more precise than a basic controller and more intuitive.
-The system will communicate directly with a mobile app, which can control the robotic arm with the
-internal gyroscope of the phone and change the arm’s movement speed.
+                forwards and backward, and a pressure sensor to close the robot's gripper with our fingers.
+                For example, it can manipulate toxic objects, melting objects, etc. with this sort of system, but not
+                automatically.
+                That is a sort of help; imagine putting that on a buggy to move a damaged uranium container or bomb.
+                can be more precise than a basic controller and more intuitive.</p>
+                <p> 
+                The setup includes:
+
+                <h4>Robotic Arm:</h4>
+                    Controlled by an ESP32 microcontroller using a PCA9685 driver to manage multiple servo motors.
+                    Operates based on commands sent through WebSocket communication.
+            
+                <h4>Glove Controller:</h4>
+                    Equipped with a gyroscope sensor (GY-521) and an ESP32 microcontroller to transmit hand movements to the robotic arm wirelessly.
+                    Utilizes WebSocket for communication.
+            
+                <h4>Mobile Application:</h4>
+                    Built with React Native, the app provides a user interface to control the robotic arm through WebSocket commands.
+                    Features include user authentication and real-time control of the arm.
+            
+                <h4>Database and Server:</h4>
+                    A Raspberry Pi 4 runs a MySQL database and Portainer for Docker container management.
+                    Docker containers include MySQL and phpMyAdmin for database management.
+                    Node-RED, installed directly on the Raspberry Pi, handles serial communication and stores logs in the database.
+                    An API server provides access to the database, allowing the mobile app to retrieve log data in JSON format.
+            </p>
+            <p>
+            The entire system integrates hardware and software components to create a versatile and remote-controlled robotic arm with robust data management and real-time communication.
                 </p>
             </div>
           
