@@ -94,35 +94,35 @@
             <div class="portfolio-description">
               <h2><i class="bx bx-down-arrow"></i>  Description  <i class="bx bx-down-arrow"></i></h2>
               <p>
-                I intend to build a glove with a gyro sensor to control the movement of the motors to turn or move.
-                forwards and backward, and a pressure sensor to close the robot's gripper with our fingers.
-                For example, it can manipulate toxic objects, melting objects, etc. with this sort of system, but not
-                automatically.
-                That is a sort of help; imagine putting that on a buggy to move a damaged uranium container or bomb.
-                can be more precise than a basic controller and more intuitive.</p>
+                Je devais construire un gant avec un capteur gyroscopique pour contrôler le mouvement des moteurs afin de tourner ou de déplacer le robot d'avant en arrière, et un capteur de pression pour fermer la pince du robot avec nos doigts.
+                Par exemple, il peut manipuler des objets toxiques, des objets fondants, etc. avec ce type de système, mais pas de manière automatique.
+                automatiquement.
+                C'est une sorte d'aide ; imaginez que l'on mette cela sur un buggy pour déplacer un conteneur d'uranium endommagé ou une bombe.
+                Le système peut être plus précis qu'un contrôleur de base et plus intuitif.
                 <p> 
-                The setup includes:
+                L'installation comprend :
 
-                <h4>Robotic Arm:</h4>
-                    Controlled by an ESP32 microcontroller using a PCA9685 driver to manage multiple servo motors.
-                    Operates based on commands sent through WebSocket communication.
+                <h4>Bras robotique:</h4>
+                    Contrôlé par un microcontrôleur ESP32 utilisant un pilote PCA9685 pour gérer plusieurs servomoteurs.
+                    Il fonctionne sur la base de commandes envoyées par le biais d'une communication WebSocket.
             
-                <h4>Glove Controller:</h4>
-                    Equipped with a gyroscope sensor (GY-521) and an ESP32 microcontroller to transmit hand movements to the robotic arm wirelessly.
-                    Utilizes WebSocket for communication.
+                <h4>Contrôleur de gants:</h4>
+                    Équipé d'un capteur gyroscopique (GY-521) et d'un microcontrôleur ESP32 pour transmettre sans fil les mouvements de la main au bras robotique.
+                    Utilise WebSocket pour la communication.
             
-                <h4>Mobile Application:</h4>
-                    Built with React Native, the app provides a user interface to control the robotic arm through WebSocket commands.
-                    Features include user authentication and real-time control of the arm.
+                <h4>Application mobile:</h4>
+                    Construite avec React Native, l'application fournit une interface utilisateur pour contrôler le bras robotique par le biais de commandes WebSocket.
+                    Les fonctionnalités comprennent l'authentification de l'utilisateur et le contrôle en temps réel du bras.
             
-                <h4>Database and Server:</h4>
-                    A Raspberry Pi 4 runs a MySQL database and Portainer for Docker container management.
-                    Docker containers include MySQL and phpMyAdmin for database management.
-                    Node-RED, installed directly on the Raspberry Pi, handles serial communication and stores logs in the database.
-                    An API server provides access to the database, allowing the mobile app to retrieve log data in JSON format.
+                    <h4>Base de données et serveur:</h4>
+                    Un Raspberry Pi 4 fait tourner une base de données MySQL et Portainer pour la gestion des conteneurs Docker.
+                    Les conteneurs Docker incluent MySQL et phpMyAdmin pour la gestion de la base de données.
+                    Node-RED, installé directement sur le Raspberry Pi, gère la communication série et stocke les journaux dans la base de données.
+                    Un serveur API fournit un accès à la base de données, permettant à l'application mobile de récupérer les données des journaux au format JSON.
             </p>
             <p>
-            The entire system integrates hardware and software components to create a versatile and remote-controlled robotic arm with robust data management and real-time communication.
+            L'ensemble du système intègre des composants matériels et logiciels pour créer un bras robotique polyvalent et télécommandé avec une gestion robuste des données et une communication en temps réel.
+
                 </p>
             </div>
           

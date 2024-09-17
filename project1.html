@@ -80,14 +80,13 @@
             <div class="portfolio-description">
               <h2><i class="bx bx-down-arrow"></i>  Description  <i class="bx bx-down-arrow"></i></h2>
               <p>
-                For this project,I was in team with Jérôme Sartiaux, Loïc Tuplink, Antoine Sprumont, Bastien Igot, Léandre Karasavas. We had to make a game with two dice.
-
-                The principle of the game was simple, we started with some points for everyone. Then the player lunch "two dice", one player by one. The result of the two dice was sum.
-                After it subtracts the point by the result down to 0, the first player at 0 wins.
-                But we put one obstacle if we go down 0, it didn't subtract and stay like before the player lunched.
+                Pour ce projet, j'étais en équipe avec Jérôme Sartiaux, Loïc Tuplink, Antoine Sprumont, Bastien Igot, Léandre Karasavas. Nous avons dû faire un jeu avec deux dés. 
+                Le principe du jeu était simple, nous avons commencé avec quelques points pour tout le monde. Puis le joueur déjeune « deux dés », un joueur par un. Le résultat des deux dés était la somme. 
+                Après avoir soustrait le point par le résultat jusqu'à 0, le premier joueur à 0 gagne. 
+                Mais on met un obstacle si on descend à 0, il ne se soustrait pas et ne reste pas comme avant que le joueur ne déjeune.
                 <p>
-                 The project was separate in two parts : an electronique part and an It part. This two part were connected by a communication card.</br></br>
-                 The electronique part had 14 leds, numbered from 1 to 7 by each part. Each one represent the point of the dice like you see in the scematics. Here is the logical for each led on :
+                  Le projet était séparé en deux parties : une partie électronique et une partie informatique. Ces deux parties étaient reliées par une carte de communication.</br></br>
+                  La partie électronique comportait 14 leds, numérotées de 1 à 7 par pièce. Chacun représente le point des dés comme vous le voyez dans les scématiques. Voici la logique pour chaque led sur :
                  	<ul>
                  <li>1 : D7</li> 
                  <li>2 : D5  D6</li> 
@@ -97,14 +96,14 @@
                  <li>	6 : D5  D6  D3  D4  D1  D2</li> 
                  </ul>
                  </p>
-                 The electronique part had 4 different integrated circuit: </br>
+                 La partie électronique comportait 4 circuits intégrés différents : </br>
                 </br>
                 <p>
                   <h5>CD4093</h5></br>
                  <div class="left-side-img">
                  <div class="text">
                  <p>
-                 The CD4093 are composed by 4 logic gate NAND, each gates switched at different points for positive and negative signals, the signal out was reversed (High or Low)
+                  Les CD4093 sont composés de 4 portes logiques NAND, chaque porte étant commutée en différents points pour les signaux positifs et négatifs, le signal sortant a été inversé (High ou Low)
                  </p></div>
                  <div class="image">
                   <img src="assets/img/portfolio/1st year/4093.png" alt="" width="194px" height="212px">
@@ -117,7 +116,7 @@
                  <div class="left-side-img">
                  <div class="text">
                  <p>
-                 The CD4069 his jobs was to reversed the polarisation of the signal</br> (High => Low or Low => High)
+                  Le CD4069 avait pour mission d'inverser la polarisation du signal </br>(Haut => Bas ou Bas => Haut)
                  </p></div>
                  <div class="image">
                   <img src="assets/img/portfolio/1st year/4069.png" alt="" width="194px" height="212px">
@@ -131,7 +130,7 @@
                  <div class="left-side-img">
                  <div class="text">
                  <p>
-                 The CD4029 is an up/down counter. it can count in binary or decimal, and relunch the count when it can't go higher.
+                  Le CD4029 est un compteur haut/bas. Il peut compter en binaire ou en décimal, et redéjeuner le compte lorsqu'il ne peut pas aller plus haut.
                  </p></div>
                  <div class="image">
                   <img src="assets/img/portfolio/1st year/4029.jpg" alt="" width="260px" height="320px">
@@ -145,7 +144,7 @@
                  <div class="left-side-img">
                  <div class="text">
                  <p>
-                 The CD4053 is an analogue multiplexer/demultiplexer triple. Each part had 2 canals and 3 entry command 
+                  Le CD4053 est un triplette multiplexeur/démultiplexeur analogique. Chaque partie avait 2 canaux et 3 commandes d'entrée
                  </p></div>
                  <div class="image">
                   <img src="assets/img/portfolio/1st year/4053.png" alt="" width="320px" height="260px">
@@ -154,13 +153,13 @@
                 </p>
               </br>
 
-                 Here was the logic of the programs : </br>
+                 Voici la logique des programmes : </br>
                  <div class="left-side-img">
                  <div class="text">
                  <p>
-                 When it was lunch, a loop makes a check to see if 
-                 the points different to 0 if not. It listened to  the communication card and took the two dice and did the sum after substract the points by the sum.
-                 It did an other verification, if the sum was bigger or equals to 0  , the points are authorized. If not the point stayed the same.
+                  Quand c'est démarré, une boucle fait un chèque pour voir si les points sont différents de 0 ou non.
+                   Il recois les informations de la carte de communication et a pris les deux dés et a fait la somme après avoir soustrait les points par la somme. 
+                   Il a fait une autre vérification, si la somme était supérieure ou égale à 0, les points sont autorisés. Sinon, le point restait le même.
                  </p></div>
                  <div class="image">
                   <img src="assets/img/portfolio/1st year/programs logic.png" alt="">
